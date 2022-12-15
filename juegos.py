@@ -1,4 +1,5 @@
 import os, sys, time
+import random
 while True:
  try:
   import requests
@@ -157,6 +158,7 @@ def menu():
     print(f"{color.verde}[2]PACMAN")
     print(f"{color.verde}[3]INVADERS")
     print(f"{color.verde}[4]SUDOKU")
+    print(f"{color.verde}[5]AHORCADO")
     print(f"{color.rojo}[0]SALIR{color.fin}")
     eleccion =input(f"{color.cyan}ELIJE UN NUMERO >>{color.fin} ")
     if eleccion == "1" :
@@ -167,6 +169,12 @@ def menu():
      invaders()
     elif eleccion == "4" :
      sudoku()
+    elif eleccion == "5" :
+     try:
+      baile()
+      ahorcado()
+     except:
+       menu()
     elif eleccion == "0" :
      banner()
      salir() 
