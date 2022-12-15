@@ -178,7 +178,7 @@ def menu():
       ahorcado()
      except:
        menu()
-     elif eleccion == "6" :
+    elif eleccion == "6" :
      try:
       tablero()
      except:
