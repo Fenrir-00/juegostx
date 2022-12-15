@@ -1,4 +1,5 @@
 import os, sys, time
+from ahorcado import *
 import random
 while True:
  try:
