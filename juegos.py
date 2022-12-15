@@ -184,6 +184,7 @@ def pacman():
 def tetris():
  while True:
   try:
+    os.system("clear")
     os.system("tetris")
     break
   except:
