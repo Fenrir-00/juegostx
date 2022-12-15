@@ -178,6 +178,11 @@ def menu():
       ahorcado()
      except:
        menu()
+     elif eleccion == "6" :
+     try:
+      tablero()
+     except:
+       menu()
     elif eleccion == "0" :
      banner()
      salir() 
