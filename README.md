@@ -13,5 +13,5 @@ git clone https://github.com/Fenrir-00/juegostx
 cd juegostx
 ```
 ```bash
-python3 juego.py
+python3 juegos.py
 ```
