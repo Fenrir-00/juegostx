@@ -119,8 +119,7 @@ def piedra():
   contador2 = 0
   piedra()
  elif opcionjuego == "5":
-  os.system("clear")
-  exit
+  menu()
  else :
   print("opcion inconrrecta")
   time.sleep(2)
