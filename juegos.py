@@ -24,7 +24,7 @@ class color:
     fin = '\033[0m'
 
 
-r= requests.get("https://raw.githubusercontent.com/Fenrir-00/investigar-web/main/version.txt")
+r= requests.get("https://raw.githubusercontent.com/Fenrir-00/juegostx/main/version.txt")
 r=r.text
 if r != "version=2.1\n":
  os.system("clear")
