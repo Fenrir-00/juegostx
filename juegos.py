@@ -1,6 +1,7 @@
 import os, sys, time
 from ahorcado import *
 from tres import *
+from papel import *
 import random
 while True:
  try:
@@ -162,6 +163,7 @@ def menu():
     print(f"{color.verde}[4]SUDOKU")
     print(f"{color.verde}[5]AHORCADO")
     print(f"{color.verde}[6]TRES")
+    print(f"{color.verde}[7]PIERDA PAPEL TIJERA")
     print(f"{color.rojo}[0]SALIR{color.fin}")
     eleccion =input(f"{color.cyan}ELIJE UN NUMERO >>{color.fin} ")
     if eleccion == "1" :
@@ -181,6 +183,11 @@ def menu():
     elif eleccion == "6" :
      try:
       tablero()
+     except:
+       menu()
+    elif eleccion == "7" :
+     try:
+      piedra()
      except:
        menu()
     elif eleccion == "0" :
