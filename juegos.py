@@ -174,40 +174,24 @@ def menu():
         incorrecto()
 
 def pacman():
- while True:
-  try:
+    os.system("pkg install pacman4console")
     os.system("pacmanplay")
     menu()
-    break
-  except:
-    os.system("pkg install pacman4console")
 
 def tetris():
- while True:
-  try:
+    os.system("pkg install vitetris")
     os.system("clear")
     os.system("tetris")
     menu()
-    break
-  except:
-    os.system("pkg install vitetris")
 
 def invaders():
- while True:
-  try:
+    os.system("pkg install ninvaders")
     os.system("ninvaders")
     menu()
-    break
-  except:
-    os.system("pkg install ninvaders")
 
 def sudoku():
- while True:
-  try:
-    os.system("nudoku")
-    menu() 
-    break
-  except:
     os.system("pkg install nudoku")
+    os.system("nudoku")
+    menu()
 menu()
 
