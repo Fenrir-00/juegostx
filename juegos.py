@@ -1,5 +1,6 @@
 import os, sys, time
 from ahorcado import *
+from tres import *
 import random
 while True:
  try:
@@ -160,6 +161,7 @@ def menu():
     print(f"{color.verde}[3]INVADERS")
     print(f"{color.verde}[4]SUDOKU")
     print(f"{color.verde}[5]AHORCADO")
+    print(f"{color.verde}[6]TRES")
     print(f"{color.rojo}[0]SALIR{color.fin}")
     eleccion =input(f"{color.cyan}ELIJE UN NUMERO >>{color.fin} ")
     if eleccion == "1" :
